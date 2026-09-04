@@ -13,7 +13,7 @@ class LeftRotateArrayByKTimes{
         }
 
         for(int x : arr){
-            System.out.print(arr+" ");
+            System.out.print(x+" ");
         }
 
     }
