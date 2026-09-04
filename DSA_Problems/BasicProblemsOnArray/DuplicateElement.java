@@ -1,17 +1,22 @@
 public class DuplicateElement {
     public static void main(String args[]){
         int arr[] = {10,20,30,40,50};
-        int found = -1;
+        boolean found = true;
         for(int i=0;i<arr.length;i++){
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]==arr[j]){
-                    
-                    found = i;
+                    System.out.println("The Duplicate Element found "+arr[i]);
+                    found = true;
                     break;
                 }
             }
+            if(found){
+                break;
+            }
             
         }
-        System.out.println(found);
+        if(!found){
+            System.out.println("The Dupliacte not found");
+        }
     }
 }
