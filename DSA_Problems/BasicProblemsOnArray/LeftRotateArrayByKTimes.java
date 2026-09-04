@@ -2,7 +2,7 @@ class RotateArrayBy2Times{
     public static void main(String args[]){
          
         int arr[] = {10,20,30,40,50};
-        int k =2;
+        int k =11%arr.length;
         while(k>0){
             int temp = arr[0];
             for(int i=0;i<arr.length-1;i++){
