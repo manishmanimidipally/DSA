@@ -1,0 +1,22 @@
+Systematic method to 
+
+-> is data is sorted(required)
+-> is data is prepossed
+-> is data is in memory or database
+-> is data is frequently searching 
+-. Is it mandatory to sort the data (or) repeated search is ok 
+
+
+how many ways we search the data 
+1.Linear Search -> Time complexity is O(n)
+2.Binary Search ->Time complexity is O(log n )
+
+1>linear Search  = we perform searching operation on sequential data it called as sequential searching also
+
+
+{20,30,40,12,15,19}
+
+-> No requirement of sorted data , we can go with sorted or unsorted data
+-> searching is Element with in the range or exactly data 
+->isDuplicate 
+
