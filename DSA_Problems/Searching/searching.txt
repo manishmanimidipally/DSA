@@ -20,3 +20,9 @@ how many ways we search the data
 -> searching is Element with in the range or exactly data 
 ->isDuplicate 
 
+when we use LinearSearch or BinarySearch
+-> Small dataset can use LinearSearch
+-> Large Dataset can use and data should be sorted  BinarySearch
+
+
+

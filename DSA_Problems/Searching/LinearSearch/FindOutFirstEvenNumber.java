@@ -1,4 +1,4 @@
-package DSA_Problems.Searching;
+package DSA_Problems.Searching.LinearSearch;
 
 public class FindOutFirstEvenNumber{
     public static void main(String args[]){
