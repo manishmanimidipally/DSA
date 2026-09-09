@@ -16,7 +16,7 @@ public class UsingBSonString {
             int result = names[mid].compareTo(target);
 
             if(result == 0){
-                System.out.println("Target value id found "+mid);
+                System.out.println("Target value index found "+mid);
                 return;
             }
             else if(result < 0){
@@ -29,7 +29,7 @@ public class UsingBSonString {
 
         }
 
-        System.out.println("No element is found ");
+        System.out.println("Not found ");
         
 
 
