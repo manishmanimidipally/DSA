@@ -14,7 +14,7 @@ public class FindTheFirstOccurence {
             int mid = low+(high-low)/2;
 
             if(arr[mid]==target){
-                index = low;
+                index = mid;
                 high=mid-1;
             }
             else if(arr[mid]>target){
