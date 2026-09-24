@@ -3,7 +3,7 @@ class IntersectionOfThreeArrays{
 
         int arr1[] = {1,2,2,3,4,5,5,5,6};
         int arr2[] = {3,3,4,5,6};
-        int arr3[] = {4,4,6,8,5,1};
+        int arr3[] = {3,3,4,4,6,8,5,1};
 
         for(int i=0;i<arr1.length;i++){
 
