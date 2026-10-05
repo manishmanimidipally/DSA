@@ -11,7 +11,7 @@ public class TraversalList {
     }
     public static void main(String args[]){
         ListNode l1 = new ListNode(23);
-        ListNode l2 = new ListNode(20);
+        ListNode l2 = new ListNode(20); 
         ListNode l3 = new ListNode(50);
         ListNode l4 = new ListNode(40);
 
