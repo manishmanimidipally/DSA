@@ -72,6 +72,40 @@ public class DoubleListTraversal {
         
     }
 
+    public void deleteFirst(DoubleListNode node){
+
+        while(node.prev!=null){
+            node = node.prev;
+        }
+
+        node = node.next;
+        node.prev = null;
+
+    }
+
+    public void deleteLast(DoubleListNode node){
+        while(node.next.next!=null){
+            node = node.next;
+        }
+
+        node.next.prev=null;
+        node.next=null;
+    }
+
+    public void deleteAtPoint(DoubleListNode node,int pos){
+
+        while(node.prev!=null){
+            node = node.prev;
+        }
+        
+        for(int i=1;i<pos-1;i++){
+            node = node.next;
+        }
+
+        node.next.next.prev=node;
+        node.next=node.next.next;
+    }
+
     public static void main(String args[]){
         DoubleListNode l1 = new DoubleListNode(1);
         DoubleListNode l2 = new DoubleListNode(2);
@@ -89,12 +123,32 @@ public class DoubleListTraversal {
 
         DoubleListTraversal doubleList = new DoubleListTraversal();
         
+
+        //traversal from begining 
         doubleList.printFromBeg(l3);
+
+        //insert at begining
         doubleList.insertAtBeg(l4,6);
         doubleList.printFromBeg(l4);
+
+        //insert at End
         doubleList.insertAtEnd(l2,20);
         doubleList.printFromBeg(l4);
+
+        //insert at position
         doubleList.insertAtPos(l3,96,3);
         doubleList.printFromBeg(l3);
+
+        //deleting at first
+        doubleList.deleteFirst(l2);
+        doubleList.printFromBeg(l3);
+
+        //deleting at last
+        doubleList.deleteLast(l2);
+        doubleList.printFromBeg(l3);
+
+        //delete at position
+        doubleList.deleteAtPoint(l4,3);
+        doubleList.printFromBeg(l2);
     }
 }
